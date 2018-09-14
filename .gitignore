@@ -1,0 +1,12 @@
+.project
+.classpath
+.settings/
+target/archive-tmp/
+target/classes/
+target/maven-status/
+target/test-classes/
+/target/
+.DS_Store
+._*
+.idea
+*.iml

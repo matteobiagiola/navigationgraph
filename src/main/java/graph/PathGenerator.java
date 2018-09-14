@@ -34,6 +34,9 @@ public class PathGenerator {
 		}
 		List<String> edges = pathListener.getEdges();
 
+		// It may happen that with the maxSteps provided the random walk in the navigation graph
+		// does not cover the desired target. In that case the shortest path between the last edge
+		// and target is added at the end of the path.
 		String lastEdge = edges.get(edges.size() - 1);
 		if(edges.size() == maxSteps && !lastEdge.equals(target)){
 			List<String> shortestPath = this.shortestPath(graph, lastEdge, target, edges);

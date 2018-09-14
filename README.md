@@ -36,3 +36,12 @@ List<String> listOfNavigationMethods = pathGenerator.generateRandomPathWithTarge
 System.out.println("List of navigation methods: " + listOfNavigationMethods + ". Navigation method "
         + randomNavigationMethod + " should be the last in the list.");
 ```
+
+To add the project as a maven dependency:
+1. Go to the root of the project and type: ``` mvn clean install ```
+2. Add maven dependency in your pom.xml file:
+```xml
+<groupId>navigation-graph</groupId>
+<artifactId>navigation-graph</artifactId>
+<version>1.0</version>
+```

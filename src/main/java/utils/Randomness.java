@@ -20,12 +20,13 @@ public class Randomness {
         if (collection.isEmpty())
             return null;
 
-        int position = random.nextInt(collection.size());
+        int position = this.nextInt(0, collection.size());
         Iterator<T> iterator = collection.iterator();
         int counter = 0;
         while(iterator.hasNext()){
+            T next = iterator.next();
             if(counter == position){
-                return iterator.next();
+                return next;
             }
             counter++;
         }
